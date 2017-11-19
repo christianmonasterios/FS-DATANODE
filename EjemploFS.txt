@@ -20,7 +20,7 @@ Ejemplos:
 
 El FS pide escribir en el bloque 1988, que es archivo de TEXTO 
 
-T1198800040000028Hola soy un archivo de Texto
+T1193300040000028HolaSoyUnArchivoDeTextoLPMQP
 
 otros:
 
