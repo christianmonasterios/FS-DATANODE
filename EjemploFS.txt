@@ -1,0 +1,40 @@
+Este Archivo TIENE ejemplo para probar funcionalidad de FS -> DATANODE.
+
+--- DESDE FILESYSTEM ---
+
+ESCRIBIR: Almacenar
+
+TIPO|OPERACION|BLOQUE|XXXX|TAMAÑOQUEENVIA|DATA
+TIPO: T: Texto
+	  B: Binario
+OPERACION:
+	1: Escribir
+	0: Leer
+BLOQUE: 4 bytes
+XXXX: Eliminar, a este hay que sacarlo
+TAMANOQUEENVIA: 7 Bytes. (Lo maximo es un 1MB).
+DATA: La info que envía.
+
+Ejemplos: 
+("0004" Habría que sacarlo, no hace falta.)
+
+El FS pide escribir en el bloque 1988, que es archivo de TEXTO 
+
+T1198800040000028Hola soy un archivo de Texto
+
+otros:
+
+T1139000040000028UTNSOSOSOSOSUTNSOSOSOSOSOSO!
+T1190200040000028HolaFORRROOOOOOOOROORRORORO!
+
+T1194400040000028PruebaPruebaTestTestPrueba!!
+
+LEER: 
+
+TIPO|OPERACION|BLOQUE
+
+FileSystem le pide el contenido del bloque 1944
+
+T01944
+
+
